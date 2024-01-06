@@ -95,5 +95,6 @@ else:
     print(f"Failed to retrieve the page. Status code: {response.status_code}")
     
 df = pd.DataFrame(main_product)
+df.to_csv('output.csv', index=False)
 print(df)
 
